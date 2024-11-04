@@ -1,0 +1,149 @@
+.tutorial-wrapper{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.tutorial-container {
+  padding: 30px;
+  width: 100%;
+}
+
+.tutorial-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: var(--tutorial-header);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  background-color: var(--tutorial-card-bg);
+  border: 1px solid var(--tutorial-card-border);
+  color:var(--tutorial-card-text);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-card h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+.img-shadow {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.category-card:hover .img-shadow {
+  filter: drop-shadow(0px 8px 16px rgba(2, 4, 22, 0.3)); /* Shadow around the image's actual shape */
+}
+
+.category-card:hover {
+  background-color: var(--tutorial-card-hover-bg);
+  color: var(--tutorial-card-hover-text);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.video-section {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.clear-icon{
+  font-size: 22px;
+  color: var(--clear-icon);
+  cursor: pointer;
+}
+.clear-icon.filled{
+  color:var(--clear-icon-highlight);
+}
+.workout-category-header{
+  color: var(--video-section-header);
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.back-icon{
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-field{
+  border-radius: 20px;
+  width: 500px;
+  padding: 5px 15px;
+  border:2px solid var(--search-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.3s ease;
+  background-color: var(--search-bg);
+}
+
+.search-field.filled{
+  border:2px solid var(--search-border-highlight);
+}
+.search-field input{
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--search-bg);
+}
+
+/* .search-field input:hover{
+  border: none;
+} */
+.search-icon{
+  font-size: 35px;
+  margin-left: 5px;
+  color: #b8b4b4;
+  cursor: pointer;
+}
+
+.search-icon:hover{
+  color: var(--search-icon-hover);
+}
+
+.video-list {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+  grid-template-rows: auto; /* Row size will be auto based on content */
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.workout-name{
+  color: var(--workout-name);
+  font-weight: 100;
+  font-size: 18px;
+  font-family:"Spicy Rice";
+}
+
+video {
+  max-width: 100%;
+}

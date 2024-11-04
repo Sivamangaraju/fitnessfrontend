@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bmi-container{
+    flex:1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.bmi-calculator{
+    width: 400px;
+    border: 8px solid var(--bmi-border);
+    padding: 20px;
+    backdrop-filter: blur(100px);
+    background: linear-gradient(to right, var(--bmi-lgd-1), var(--bmi-lgd-2), var(--bmi-lgd-3), var(--bmi-lgd-4));
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.header-bmi{
+    color: var(--bmi-header);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+.layer-1{
+    border-radius: 10px;
+    width:100%;
+    padding: 8px;
+    background-color: var(--bmi-layer-1);
+    margin: 20px 0;
+}
+.layer-2{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding:5px;
+    height: 50px;
+    background-color: rgb(240, 233, 225);
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #063a72;
+}
+
+.bmi-input-container{
+    margin-bottom: 10px 5px;
+}
+
+.bmi-input-container #input-label{
+    display: block;
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+    color: var(--bmi-label);
+}
+
+.bmi-input-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+    border:none;
+    text-align: center;
+    background-color: var(--bmi-input-bg);
+    color: var(--bmi-input-text);
+}
+
+.calculate-refresh{
+    display: flex;
+    margin: 10px 0;
+}
+
+
+.calculate-button{
+    padding: 0.6rem 1.5rem;
+    width: 100%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.calculate-button:hover{
+    background-color: #286fbb;
+}
+
+.refresh{
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 8px;
+    border: none;
+}
+.refresh:hover{
+    background-color: rgb(12, 66, 80);
+    color: white;
+}
+
+.result{
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #007bff;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.bmi-value{
+    font-weight: bold;    
+}

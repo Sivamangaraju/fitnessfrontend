@@ -1,0 +1,131 @@
+
+.dropbtn{
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  color: var(--dropbtn-text);
+  background-color: var(--dropbtn-bg);
+}
+.dropdown {
+  position: relative; 
+}
+.dropdown-content{
+  z-index: 1;
+  position: absolute;
+  color:rgb(19, 18, 18);
+}
+
+.bodyWeight{
+  display: flex;
+  flex-direction: row;
+  margin-bottom:8px;
+  color: #007bff;
+  font-weight: 550;
+}
+.bodyWeight input{
+  padding: 3px;
+  margin-left: 5px;
+  max-width: 100px;
+  border-radius: 5px;
+  border:1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color:var(--text-color);
+
+}
+
+.first-level, .second-level, .third-level {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.first-level > li {
+  padding-left: 5px;
+  height: 30px;
+  width: 150px;
+  position: relative; /* Add relative positioning */
+}
+
+.second-level > li {
+  padding-left: 5px;
+  height: 30px;
+  width: 150px;
+  position: relative; /* Add relative positioning */
+}
+
+.third-level > li {
+  padding-left: 5px;
+  width: 150px;
+}
+
+/* .first-level > li:hover {
+  background: #d8e3f0;
+} */
+
+.first-level li:hover > ul {
+  /* On hover, display the next level's menu */
+  display: inline;
+}
+
+.second-level {
+  display: none; /* Initially hide */
+  top: 0; /* Align with the hovered first-level item */
+  height: 30px;
+  width: 150px;
+  position: absolute;
+}
+
+.first-level > li:hover > .second-level {
+  display: block; /* Show second-level on hover */
+  position: absolute;
+  left: 150px; /* Position to the right of first-level */
+  top: 0; /* Align at the same height as the hovered first-level item */
+}
+
+.third-level {
+  display: none; /* Initially hide */
+  top: 0;
+  height: 30px;
+  width: 150px;
+  position: absolute;
+}
+
+.second-level > li:hover > .third-level {
+  display: block; /* Show third-level on hover */
+  position: absolute;
+  left: 150px; /* Position to the right of second-level */
+  top: 0; /* Align at the same height as the hovered second-level item */
+}
+
+.display-input-workout{
+  display: flex;
+  flex-direction: column;
+}
+.display-input-workout label{
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.display-input-workout input{
+  padding: 5px;
+  width: 60%;
+  border-radius: 5px;
+  border:1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color:var(--text-color);
+}
+li {
+  cursor: pointer;
+  background-color: var(--list-bg);
+  color:var(--list-text);
+}
+
+li:hover {
+  background-color:var(--list-hover-bg);
+  color:var(--list-hover-text);
+}
+

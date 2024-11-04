@@ -1,0 +1,108 @@
+
+.workout-history-container {
+  flex:1;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.history-graph-tabs{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap:15px;
+}
+.scrollable-table-container {
+  height: 75vh; 
+  overflow-y: auto; 
+  width: 100%; 
+}
+
+/* Responsive table design */
+.workout-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.workout-history-table th,
+.workout-history-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid var(--table-row-border);
+}
+
+.workout-history-table th{
+  border-right: 2px solid var(--table-header-border);
+}
+.workout-history-table thead tr {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+  border: 2px solid var(--table-header-border);
+}
+
+.workout-dropdown {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--table-dropdown-text);
+  background-color: var(--table-dropdown-bg);
+}
+
+.workout-dropdown option{
+  border: 2px solid yellow;
+  background-color: var(--table-dropdown-option-bg);
+  color:var(--table-dropdown-option-text);
+}
+
+.workout-dropdown option:hover{
+  background-color: var(--table-dropdown-option-hover-bg);
+  color:var(--table-dropdown-option-hover-text);
+}
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+  .workout-history-table {
+    font-size: 14px;
+  }
+
+  .workout-history-table th,
+  .workout-history-table td {
+    padding: 8px;
+  }
+
+  .workout-dropdown {
+    padding: 4px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .workout-history-table {
+    font-size: 12px;
+  }
+
+  .workout-history-table th,
+  .workout-history-table td {
+    padding: 6px;
+  }
+
+  .workout-dropdown {
+    padding: 3px;
+  }
+}
+
+.weight-graph{
+  display: flex;
+  margin-top:20px;
+  flex-direction: column;
+}
+
+.line-chart{
+  display: flex;
+  background-color: var(--line-chart-bg);
+}
+
